@@ -1,6 +1,8 @@
     .file "Masd.s"
     .text
     .section    .rodata
+.LC02:
+    .string "number cycle2: is %d '\n'"
 .LC0:
     .string "number cycle1: is %d '\n'"
     .text
@@ -52,11 +54,6 @@ Loop2:
     jmp Loop2
 
 
-
-
-
-.LC02:
-    .string "number cycle2: is %d '\n'"
 
 
 End:
