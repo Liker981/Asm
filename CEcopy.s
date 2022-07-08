@@ -14,7 +14,6 @@ main:
 	movq	%rsp, %rbp
 
     subq	$16, %rsp
-	movq	%fs:40, %rax
 	movq	%rax, -8(%rbp)
 	xorl	%eax, %eax
 
@@ -33,7 +32,6 @@ main:
 	movl	$0, %eax
 	movq	-8(%rbp), %rdx
 
-	xorq	%fs:40, %rdx
     je      .L3
 	call	__stack_chk_fail@PLT
 
