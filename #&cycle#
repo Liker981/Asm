@@ -1,5 +1,0 @@
-.file "&cycle.s"
-.text
-.section   .rodata
-
-main:
